@@ -1,0 +1,119 @@
+/* Global Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.alert {
+    /*
+    Відстань зверху 10px
+    Відстань справа 0px
+    Відстань знизу 5px
+    Відстань зліва 0px
+    */
+    margin: 10px 0 5px 0;
+}
+
+#footer {
+    /* задаємо верхню межу елемента: ширина лінії,
+    тип лінії, колір лінії */
+    border-top: 1px solid #dee2e6;
+    /* задаємо внутрішню відстань елемента до верхнього краю */
+    padding-top: 10px;
+}
+
+#group-selector {
+    margin-top: 10px;
+}
+
+#group-selector label {
+    line-height: calc(1.5em + .75rem + 2px);
+}
+
+
+/* Table Styles */
+
+.caption_visiting_table {
+    text-align: center;
+    caption-side: top;
+    color: #000;
+    padding: 5px 0 5px 0;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.visiting_table {
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+.visiting_table th {
+    padding: 0;
+}
+
+.visiting_table tr th {
+    border: 1px solid #dee2e6;
+    padding: 0;
+}
+
+.visiting_table tr td {
+    border: 1px solid #dee2e6;
+    padding: 0;
+}
+
+td {
+    vertical-align: 50%;
+}
+
+.visiting_table label {
+    margin: 50% 0;
+}
+
+.visiting_table .cell_align_left {
+    padding-left: 5px;
+}
+
+.cell_align_left {
+    text-align: left;
+}
+
+.container_student_redaction {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.student_redaction_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.student_redaction_buttons {
+    width: 70%;
+}
+
+#student_redaction_cell_for_photo {
+    box-sizing: border-box;
+    border: 1px solid #767676;
+}
+
+.text_align_top {
+    vertical-align: top;
+}
+
+.current_photo_choiser {
+    display: flex;
+    justify-content: space-between;
+}

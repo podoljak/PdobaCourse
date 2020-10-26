@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редагувати студента</title>
+    <meta name="description" content="Система обліку студентів навчального закладу" />
+
+    <!-- Include Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="">
+        <div class="container_student_redaction">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <pre><h1>Редагувати </h1></pre>
+                        </td>
+                        <td>
+                            <pre><h1>студента</h1></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="group">Група*</label></td>
+                        <td>
+                            <div class="form-group">
+                                <label for="group_select">
+                                <select class="form-control" id="group_select" style="width: 227px;">
+                                    <option>Test 1</option>
+                                    <option>Test 2</option>
+                                    <option>Test 3</option>
+                                </select>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstname">Ім'я*</label></td>
+                        <td>
+                            <div class="form-group">
+                                <label for="firstname">
+                                    <input type="text" id="firstname" class="form-control">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="secondname">Прізвище*</label></td>
+                        <td>
+                            <div class="form-group">
+                                <label for="secondname">
+                                    <input type="text" id="secondname" class="form-control">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="surname">По-батькові</label></td>
+                        <td>
+                            <div class="form-group">
+                                <label for="surname">
+                                    <input type="text" id="surname" class="form-control">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="born_date">Дата народження*</label></td>
+                        <td>
+                            <div class="form-group">
+                                <label for="born_date">
+                                    <input type="text" id="born_date" class="form-control">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_align_top">
+                            <label for="current_photo">Фото</label>
+                        </td>
+                        <td>
+                            <div class="form-group current_photo_choiser" style="border: 1px solid #ced4da; border-radius: .25rem; height: calc(1.5em + .75rem + 2px); width: 227px;">
+                                <span style="height: 100%;">
+                                    <button type="submit" style="border: none; height: 100%; border-right: 1px solid #C6C6C6; color: #495057;">Наразі</button>
+                                </span>
+                                <span style="padding: 5px 10px;">
+                                    <a href="#">Photo</a>
+                                </span>
+                                <span style="padding: 5px 10px;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1" style="color: #495057;">Очистити</label>
+                                </span>
+                            </div>
+                            <div class="custom-file" style="margin-bottom: 1rem;">
+                                <input type="file" class="custom-file-input" id="choise_of_photo">
+                                <label class="custom-file-label" for="choise_of_photo" style="width: 227px; padding: 0;">
+                                    <button type="submit" style="border: none; height: 100%; border-right: 1px solid #C6C6C6; color: #495057;;">Змінити</button>
+                                 ... </label>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ticket ">Білет*</label></td>
+                        <td>
+                            <div class="form-group ">
+                                <label for="ticket ">
+                                    <input type="number" id="ticket " class="form-control ">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text_align_top "><label for="additional_notes ">Додаткові нотатки</label></td>
+                        <td>
+                            <div class="form-group ">
+                                <label for="additional_notes"></label>
+                                <textarea id="additional_notes " rows="8 " style="width: 75%;" class="form-control" name="additional_notes " placeholder=" Test "></textarea><br>
+                                <span class="student_redaction_buttons ">
+                                    <a class="btn btn-primary " href="# " role="button ">Зберегти</a>
+                                    <a class="btn btn-primary " href="# " role="button ">Скасувати</a>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
