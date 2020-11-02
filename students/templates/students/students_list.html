@@ -48,13 +48,13 @@
             <div class="col-sm-12">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Студенти</a>
+                        <a class="nav-link active" href="{% url 'home' %}">Студенти</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Відвідування</a>
+                        <a class="nav-link" href="/journal">Відвідування</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Групи</a>
+                        <a class="nav-link" href="{% url 'groups' %}">Групи</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                 <h2 class="my-3">База студентів</h2>
 
                 <!-- Add Student Button -->
-                <a class="btn btn-primary" href="#" role="button">Додати Студента</a>
+                <a class="btn btn-primary" href="{% url 'students_add' %}" role="button">Додати Студента</a>
 
                 <div>
                     <!-- Start Students Listing -->
@@ -88,8 +88,8 @@
                             <tr>
                                 <td>1</td>
                                 <td><img height="35" width="35" src="./img/Myc`.jpg" class="rounded-circle" /></td>
-                                <td><a title="Редагувати" href="#">Котищенко</a></td>
-                                <td><a title="Редагувати" href="#">Миць</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 1 %}">Котищенко</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 1 %}">Миць</a></td>
                                 <td>410</td>
                                 <td>
                                     <div class="dropdown">
@@ -97,9 +97,9 @@
                                         Дія
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Редагувати</a>
-                                            <a class="dropdown-item" href="#">Відвідування</a>
-                                            <a class="dropdown-item" href="#">Видалити</a>
+                                            <a class="dropdown-item" href="{% url 'students_edit' 1 %}">Редагувати</a>
+                                            <a class="dropdown-item" href="/journal/1">Відвідування</a>
+                                            <a class="dropdown-item" href="{% url 'students_delete' 1 %}">Видалити</a>
                                         </div>
                                     </div>
                                 </td>
@@ -107,8 +107,8 @@
                             <tr>
                                 <td>2</td>
                                 <td><img height="35" width="35" src="./img/Boka.jpg" class="rounded-circle" /></td>
-                                <td><a title="Редагувати" href="#">Собаченський</a></td>
-                                <td><a title="Редагувати" href="#">Барбос</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 2 %}">Собаченський</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 2 %}">Барбос</a></td>
                                 <td>255</td>
                                 <td>
                                     <div class="dropdown">
@@ -116,9 +116,9 @@
                                         Дія
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Редагувати</a>
-                                            <a class="dropdown-item" href="#">Відвідування</a>
-                                            <a class="dropdown-item" href="#">Видалити</a>
+                                            <a class="dropdown-item" href="{% url 'students_edit' 2 %}">Редагувати</a>
+                                            <a class="dropdown-item" href="/journal/2">Відвідування</a>
+                                            <a class="dropdown-item" href="{% url 'students_delete' 2 %}">Видалити</a>
                                         </div>
                                     </div>
                                 </td>
@@ -126,8 +126,8 @@
                             <tr>
                                 <td>3</td>
                                 <td><img height="35" width="35" src="./img/Ballon.jpg" class="rounded-circle" /></td>
-                                <td><a title="Редагувати" href="#">Повітряна</a></td>
-                                <td><a title="Редагувати" href="#">Кулька</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 3 %}">Повітряна</a></td>
+                                <td><a title="Редагувати" href="{% url 'students_edit' 3 %}">Кулька</a></td>
                                 <td>320</td>
                                 <td>
                                     <div class="dropdown">
@@ -135,10 +135,11 @@
                                         Дія
                                         </button>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Редагувати</a>
-                                            <a class="dropdown-item" href="#">Відвідування</a>
-                                            <a class="dropdown-item" href="#">Видалити</a>
+                                            <a class="dropdown-item" href="{% url 'students_edit' 3 %}">Редагувати</a>
+                                            <a class="dropdown-item" href="/journal/3">Відвідування</a>
+                                            <a class="dropdown-item" href="{% url 'students_delete' 3 %}">Видалити</a>
                                         </div>
+
                                     </div>
                                 </td>
                             </tr>
@@ -196,8 +197,7 @@
     <!-- Javascripts Section -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/jsbootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
